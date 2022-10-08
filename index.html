@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokédex</title>
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body class="">
+    <form action="" class="">
+      <div class="container">
+        <label for="idPoke">Número do Pokémon</label>
+        <div class="input-group">
+          <input
+            type="number"
+            name="idPoke"
+            id="idPoke"
+            class="form-control"
+            placeholder="Insira uma posição da Pokédex"
+          />
+          <input type="submit" value="Pesquisar" class="form-group" />
+        </div>
+      </div>
+    </form>
+
+    <section class="container">
+      <div>
+        <div id="header">
+          <h2 id="nome"></h2>
+          <h2 class="pull-right" id="codeId"></h2>
+        </div>
+        <img src="" alt="Imagem Pokemon" style="display: none" id="pokeImg" />
+      </div>
+      <div class="infoDiv">
+        <p>Altura<span id="altura"></span></p>
+        <ol id="tipoPoke"></ol>
+        <p>Peso<span id="peso"></span></p>
+        <ul id="fraquezaPoke"></ul>
+        <ul id="habilidades"></ul>
+      </div>
+    </section>
+    <div class="divStats">
+      <ul id="stats">
+        <div>
+          <label for="hp">Pontos de Vida</label>
+          <!-- <progress id="hp" value="" max="100"></progress> -->
+          <div id="hp" class="progressBar"></div>
+        </div>
+
+        <div>
+          <label for="attack">Ataque</label>
+          <!-- <progress id="attack" value="" max="100"></progress> -->
+          <div id="attack" class="progressBar"></div>
+        </div>
+
+        <div>
+          <label for="defense">Defesa</label>
+          <!-- <progress id="defense" value="" max="100"></progress> -->
+          <div id="defense" class="progressBar"></div>
+        </div>
+
+        <div>
+          <label for="special-attack">Ataque Especial</label>
+          <!-- <progress id="special-attack" value="" max="100"></progress> -->
+          <div id="special-attack" class="progressBar"></div>
+        </div>
+
+        <div>
+          <label for="special-defense">Defesa Especial</label>
+          <!-- <progress id="special-defense" value="" max="100"></progress> -->
+          <div id="special-defense" class="progressBar"></div>
+        </div>
+
+        <div>
+          <label for="speed">Velocidade</label>
+          <!-- <progress id="speed" value="" max="100"></progress> -->
+          <div id="speed" class="progressBar"></div>
+        </div>
+      </ul>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
